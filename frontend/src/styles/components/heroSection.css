@@ -1,0 +1,30 @@
+.hero {
+  margin-bottom: 123px;
+}
+
+.hero .container {
+  padding: 60px 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .content h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 66px;
+  text-transform: lowercase;
+  width: 50%;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.hero .content h1 span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero .content .buttons {
+  display: flex;
+  gap: 21px;
+}

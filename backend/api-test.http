@@ -1,0 +1,23 @@
+GET http://localhost:8000/categories
+
+###
+GET http://localhost:8000/categories/6416f4f5966d01971c5e6a35
+
+###
+POST http://localhost:8000/categories
+Content-Type: application/json
+
+{
+  "name": "Laptop"
+}
+
+###
+PATCH http://localhost:8000/categories/6416f4f5966d01971c5e6a35
+Content-Type: application/json
+
+{
+  "name": "TV"
+}
+
+###
+DELETE http://localhost:8000/categories/6416f4f5966d01971c5e6a35

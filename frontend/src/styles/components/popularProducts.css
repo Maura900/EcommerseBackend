@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.popular-products {
+  margin-bottom: 95px;
+}
+
+.popular-products .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.popular-products .header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.popular-products .header .categories {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.popular-products .header .categories .category-item {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.popular-products .header .categories .category-item.active {
+  color: white;
+  background-color: var(--secondary-color);
+  border: 1px solid transparent;
+}
+
+.popular-products .products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.popular-products .products .product-item {
+  width: calc((100% - (26px * 3)) / 4);
+  border: 1px solid #b6b6b6;
+  border-radius: 20px;
+  padding: 19px 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-item .item-sale {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0 5px 5px 0;
+}
+
+.product-item .picture {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product-item .picture img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+}
+
+.product-item .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.info .content a {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.info .content p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.info .content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.add-cart-btn {
+  padding: 13px;
+  background-color: #e9e9e9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-cart-btn svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.add-cart-btn:hover svg {
+  color: white;
+}

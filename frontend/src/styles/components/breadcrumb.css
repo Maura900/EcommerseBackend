@@ -1,0 +1,27 @@
+.breadcrumb {
+  background-color: #fdfdfd;
+  padding: 26px 0;
+  margin: 40px 0;
+}
+
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-size: 16px;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "\003E";
+  color: #292d32;
+  margin: 0 16px;
+}
+
+.breadcrumb-item.active {
+  color: #b3b3b3;
+  pointer-events: none;
+}

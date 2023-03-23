@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.login-wrapper {
+  transition: all 0.5s ease;
+}
+
+.login-wrapper .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    323.15deg,
+    #003585 10.34%,
+    rgba(0, 53, 133, 0.78) 101.8%
+  );
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.login-wrapper .login {
+  width: 500px;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 36px;
+  transition: all 0.5s ease;
+}
+
+.login-wrapper .login.show {
+  top: 50%;
+}
+
+.login-wrapper .login.show + .overlay {
+  display: block;
+}
+
+.login .header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.login .header .logo {
+  width: 150px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.login .header .logo img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.login .header .close-btn {
+  cursor: pointer;
+}
+
+.login .header .close-btn svg {
+  color: #afadb5;
+}
+
+.login form {
+  padding: 0 0 0 5px;
+}
+
+.login form .input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login form .input svg {
+  width: 20px;
+  height: 20px;
+  color: #afadb5;
+}
+
+.login form .input.email {
+  margin-bottom: 16px;
+}
+
+.login form .input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  box-shadow: none;
+  color: #afadb5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login form .input input:active,
+.login form .input input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.login form .input input::placeholder {
+  font-family: "Inter", sans-serif;
+  color: #afadb5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.password-show {
+  cursor: pointer;
+}
+
+.login form .input.password {
+  margin-bottom: 6px;
+}
+
+.login form .password-forget {
+  text-align: right;
+  font-size: 16px;
+  color: #afadb5;
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.login form .primary-btn {
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.login form .divider {
+  display: flex;
+  flex-direction: row;
+  color: #8b8f94;
+  padding: 12px 0;
+  margin-bottom: 16px;
+}
+
+.login form .divider:before,
+.login form .divider:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.login form .divider:before {
+  margin-right: 10px;
+}
+.login form .divider:after {
+  margin-left: 10px;
+}
+
+.login form .outline-primary-btn {
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}

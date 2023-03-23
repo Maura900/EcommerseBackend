@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #003585;
+  --secondary-color: #a7f65c;
+  --danger-color: #eb5757;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.primary-bg {
+  background-color: var(--primary-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.outline-white-btn {
+  padding: 13px 32px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.outline-secondary-btn {
+  padding: 13px 32px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.white-btn {
+  padding: 13px 32px;
+  color: var(--primary-color);
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  padding: 12px 31px;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+
+.outline-primary-btn {
+  padding: 13px 32px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}

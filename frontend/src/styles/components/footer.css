@@ -1,0 +1,41 @@
+.footer {
+  padding: 69px 69px 81px 57px;
+}
+
+.footer .logo {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 140px;
+}
+
+.footer .logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .bottom .socials {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.footer .bottom .socials svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer .bottom .copyright {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
